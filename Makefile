@@ -1,14 +1,15 @@
 # Filename:		Makefile
-# Date:			11/08/2020
-# Author:		Stephen Perkins
-# Email:		stephen.perkins@utdallas.edu
+# Date:			11/22/2020
+# Author:		Michael Sobieski
+# Email:		mbs180001@utdallas.edu
 # Version:		1.0
 # Copyright:		2020, All Rights Reserved
 #
 # Description:
 #
 #	A small project that will display a text based
-#	GUI based on Curses / CDK.
+#	GUI based on Curses / CDK. It is based mostly on
+#       Dr. Perkins' provide Makefile
 
 
 # Set up needed values to support make's implicit commands
@@ -21,7 +22,7 @@ CXX = g++
 CPPFLAGS = -I /scratch/perkins/include
 
 # compiler flags
-CXXFLAGS = -Wall
+CXXFLAGS = -Wall -Wno-write-strings
 
 # linker flags
 LDFLAGS = -L /scratch/perkins/lib

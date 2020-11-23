@@ -13,16 +13,7 @@
  *      obtained from Dr. Perkins.
  */
 
-#include <iostream>
-#include "cdk.h"
-#include <fstream>
-#include <string>
-#include <iomanip>
-#include <stdint.h>
-#include <inttypes.h>
-#include <sstream>
-#include <stdio.h>
-#include <stdlib.h>
+#include "header.h"
 
 #define MATRIX_ROWS 5
 #define MATRIX_COLS 3
@@ -199,6 +190,8 @@ int main()
 
  sleep(10);
  endCDK();
+
+ printSuccess();
 
  return 0;
 }
